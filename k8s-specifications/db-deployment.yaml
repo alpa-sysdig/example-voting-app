@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: db
-  name: db
+  name: db1
   namespace: vote
 spec:
   replicas: 1
