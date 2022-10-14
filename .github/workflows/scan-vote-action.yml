@@ -18,8 +18,7 @@ jobs:
       uses: josStorer/get-current-time@v2.0.2
       id: current-time
       with:
-        format: YYYYMMDD-HH
-        utcOffset: "+08:00"
+        format: YYYYMMDD
         
     - name: Set Tags
       run: echo "IMAGE_TAG=vote-${{ steps.current-time.outputs.time }}" >> $GITHUB_ENV
