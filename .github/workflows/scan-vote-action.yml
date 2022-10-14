@@ -18,7 +18,7 @@ jobs:
       uses: josStorer/get-current-time@v2.0.2
       id: current-time
       with:
-        format: YYYYMMDD-HH
+        format: YYYYMMDD
         utcOffset: "+08:00"
         
     - name: Set Tags
