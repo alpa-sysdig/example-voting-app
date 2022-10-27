@@ -1,5 +1,5 @@
-# Using official python runtime base image1
-FROM python:3.9-slim
+# Using official pythron runtime base image1
+FROM python:3.9-slim 
 
 # add curl for healthcheck
 RUN apt-get update \
