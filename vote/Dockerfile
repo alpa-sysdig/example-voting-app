@@ -7,7 +7,7 @@ RUN apt-get update \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Set the application directory
+# Set the application directoryed
 WORKDIR /app
 
 # Install our requirements.txt
