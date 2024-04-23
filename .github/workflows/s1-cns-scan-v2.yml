@@ -30,6 +30,9 @@ jobs:
         context: ${{ env.DOCKERFILE_CONTEXT }}
         tags: ${{ secrets.REGISTRY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
         load: true
+        
+    - name: Install S1 CLI
+      run: pip install s1-cns-cli
 
     - name: Configure SentinelOne CNS CLI
       run: s1-cns-cli config --api-token $TOKEN --endpoint-url https://app.pingsafe.com
