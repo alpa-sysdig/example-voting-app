@@ -43,7 +43,7 @@ jobs:
       run: git config --global --add safe.directory $PWD
 
     - name: Run S1 Vulm
-      run:  s1-cns-cli scan vuln $PWD
+      run:  s1-cns-cli scan vuln -d $PWD
       
     - name: Login to the registry
       uses: docker/login-action@v2
