@@ -37,7 +37,7 @@ jobs:
         TOKEN: ${{secrets.SENTINELONE_CNS_TOKEN}}
 
     - name: Run S1 Vulm
-      run:  s1-cns-cli scan vuln -d docker.io/${{ secrets.REGISTRY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+      run:  s1-cns-cli scan vuln -d docker://${{ secrets.REGISTRY_USER }}/${IMAGE_NAME}:${IMAGE_TAG}
     
     - name: Login to the registry
       uses: docker/login-action@v2
